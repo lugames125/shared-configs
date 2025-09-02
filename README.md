@@ -17,11 +17,11 @@ Install the dependencies -
 
 ### Packages
 
-| Package                                                                            | Description                                                                |
-| ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| [@krudi/prettier-config](https://www.npmjs.com/package/@krudi/prettier-config)     | Shared [Prettier](https://github.com/prettier/prettier) configuration      |
-| [@krudi/eslint-config](https://www.npmjs.com/package/@krudi/eslint-config)         | Shared [ESLint](https://github.com/eslint/eslint) flat configuration       |
-| [@krudi/typescript-config](https://www.npmjs.com/package/@krudi/typescript-config) | Shared [TypeScript](https://github.com/microsoft/TypeScript) configuration |
+| Package                                                                            | Description                                                                | Version                                                                                   | Additional Information                                                                                 |
+| ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| [@krudi/prettier-config](https://www.npmjs.com/package/@krudi/prettier-config)     | Shared [Prettier](https://github.com/prettier/prettier) configuration      | ![NPM Version](https://img.shields.io/npm/v/@krudi/prettier-config)                        | ![NPM Downloads](https://img.shields.io/npm/dm/@krudi/prettier-config) ![NPM License](https://img.shields.io/npm/l/@krudi/prettier-config) |
+| [@krudi/eslint-config](https://www.npmjs.com/package/@krudi/eslint-config)         | Shared [ESLint](https://github.com/eslint/eslint) flat configuration       | ![NPM Version](https://img.shields.io/npm/v/@krudi/eslint-config)                          | ![NPM Downloads](https://img.shields.io/npm/dm/@krudi/eslint-config) ![NPM License](https://img.shields.io/npm/l/@krudi/eslint-config)     |
+| [@krudi/typescript-config](https://www.npmjs.com/package/@krudi/typescript-config) | Shared [TypeScript](https://github.com/microsoft/TypeScript) configuration | ![NPM Version](https://img.shields.io/npm/v/@krudi/typescript-config)                      | ![NPM Downloads](https://img.shields.io/npm/dm/@krudi/typescript-config) ![NPM License](https://img.shields.io/npm/l/@krudi/typescript-config) |
 
 Each package can be installed individually depending on your needs.
 
