@@ -5,7 +5,7 @@ projects to provide consistent compiler settings.
 
 ## Quick start
 
-1. Install the depedency: `pnpm add -D @krudi/typescript-config`
+1. Install the depedency: `npm install --save-dev @krudi/typescript-config`
 
 ## Usage
 

@@ -13,7 +13,7 @@ consistent coding style, linting, and compiler setup across multiple projects
 ### Quick start
 
 Install the dependencies -
-`pnpm add -D @krudi/prettier-config @krudi/eslint-config @krudi/typescript-config`
+`npm install --save-dev @krudi/prettier-config @krudi/eslint-config @krudi/typescript-config`
 
 ### Packages
 
@@ -91,10 +91,7 @@ need:
 
 ### Development
 
-This repo uses [pnpm](https://github.com/pnpm/pnpm) and
-[Turbo](https://github.com/vercel/turborepo).
-
 1. First clone this repository and navigate into your project directory
-2. Install the dependencies: `pnpm install`
-3. `pnpm run build` - to build all packages
-4. `pnpm run dev` - run the [TypeScript](https://www.typescriptlang.org/) server
+2. Install the dependencies: `npm install`
+3. `npm run build` - to build all packages
+4. `npm run dev` - run the [TypeScript](https://www.typescriptlang.org/) server

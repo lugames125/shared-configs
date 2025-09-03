@@ -39,4 +39,4 @@
 **/*.tsbuildinfo
 
 # Lock files
-pnpm-lock.json
+package-lock.json

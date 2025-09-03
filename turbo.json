@@ -3,11 +3,13 @@
     "tasks": {
         "build": {
             "dependsOn": ["^build"],
-            "outputs": ["dist/**", "!**/*.tsbuildinfo"]
+            "outputs": ["dist/**"]
         },
         "dev": {
-            "dependsOn": ["^dev"],
             "persistent": true,
+            "cache": false
+        },
+        "clean": {
             "cache": false
         },
         "typecheck": {
@@ -19,6 +21,12 @@
                 "tsconfig*.json"
             ],
             "outputs": []
+        },
+        "lint:eslint": {
+            "outputs": []
+        },
+        "lint:eslint:fix": {
+            "cache": false
         }
     }
 }
