@@ -5,7 +5,7 @@ consistent code style and standards across projects.
 
 ## Quick start
 
-1. Install the depedency: `pnpm add -D @krudi/eslint-config`
+1. Install the depedency: `npm install --save-dev @krudi/eslint-config`
 
 ## Usage
 

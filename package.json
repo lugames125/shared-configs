@@ -2,7 +2,6 @@
     "name": "@krudi/shared-configs",
     "description": "Shared configs for Prettier, ESLint (flat), and TypeScript to standardize formatting and linting across JavaScript/TypeScript projects (Node, React, Next.js, monorepos).",
     "license": "MIT",
-    "version": "0.1.0",
     "author": {
         "name": "krudi",
         "email": "patryk.kudlik@gmail.com",
@@ -39,7 +38,10 @@
         "npm": ">= 10.8.1"
     },
     "type": "module",
-    "packageManager": "pnpm@10.15.0",
+    "packageManager": "npm@10.9.3",
+    "workspaces": [
+        "packages/*"
+    ],
     "scripts": {
         "build": "turbo run build",
         "dev": "turbo run dev --parallel",
@@ -56,10 +58,8 @@
     "devDependencies": {
         "turbo": "^2.5.6"
     },
-    "pnpm": {
-        "overrides": {
-            "@types/node": "^22.15.33",
-            "typescript": "~5.8.3"
-        }
+    "overrides": {
+        "@types/node": "^22.15.33",
+        "typescript": "~5.8.3"
     }
 }

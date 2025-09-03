@@ -5,7 +5,7 @@ enforce consistent formatting across projects.
 
 ## Quick start
 
-1. Install the depedency: `pnpm add -D @krudi/prettier-config`
+1. Install the depedency: `npm install --save-dev @krudi/prettier-config`
 
 ## Usage
 
