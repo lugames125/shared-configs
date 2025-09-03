@@ -2,7 +2,7 @@
     "name": "@krudi/eslint-config",
     "description": "Reusable ESLint configuration to enforce consistent code style and standards across projects.",
     "license": "MIT",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "authors": [
         {
             "name": "krudi",
